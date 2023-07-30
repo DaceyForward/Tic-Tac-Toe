@@ -1,0 +1,68 @@
+body {
+    font-family: 'Borel', cursive;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: darkgray;
+    font-size: 8vmin;
+    letter-spacing: 3vmin;
+    margin-bottom: -2vmin;
+    margin-top: 0;
+}
+
+h2 {
+    color: lightgray;
+    font-size: 5vmin;
+    margin-top: -4vmin;
+    margin-bottom: -2vmin;
+}
+
+h3 {
+    font-size: 3vmin;
+    color: grey;
+    margin-top: 1vmin;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    gap: 1vmin;
+    margin-top: -2vmin;
+}
+
+#board>div {
+    border: 0.1vmin solid lightgray;
+    border-width: 5vmin;
+    border-style: solid;
+    transform: scale(0.7);
+    transition: transform 150ms ease-in;
+    background-color: lightgray;
+    margin: -3vmin
+}
+
+#board>div:hover {
+    transform: scale(0.8);
+    transition: transform 150ms ease-in;
+    background-color: grey;
+    border-color: grey;
+}
+
+button {
+    color: grey;
+    border: 0.1vmin solid grey;
+    border-radius: 2vmin;
+    font-size: 4vmin;
+    margin-top: 3vmin;
+    margin-bottom: 4vmin;
+}
+
+button:hover {
+    color: white;
+    background-color: darkgray;
+}
