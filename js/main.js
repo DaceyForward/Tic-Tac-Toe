@@ -1,5 +1,10 @@
+//GAME INSPIRED BY MY TWO-YEAR-OLD DAUGHTER
+
 // 1) Define required constants
     // 1.1) Define a colors object with keys of 'null' (when the square is empty), and players 1 & -1. The value assigned to each key represents the color to display for an empty square (null), player 1 and player -1.
+
+    // I wanted the players names to be 'Elsa' and 'Anna' but can't figure out how to keep the colors I want too..
+    
     const COLORS = {
         0: 'lightgrey', 
         1: 'paleturquoise', 

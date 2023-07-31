@@ -1,6 +1,6 @@
 # TIC-TAC-TOE 
 ## Disney's Frozen Edition!!
-
+Inspired by my two-year-old daughter.
 ## Analyze our App's Funtionality
 
 #### User Stories
