@@ -87,12 +87,14 @@ init()
 
 function init() {
     // board = Array(9).fill(null)
-    board = ['', '', '', '', '', '', '', '', '']
-    // board = [
-    //     [0, 1, 2], 
-    //     [3, 4, 5], 
-    //     [6, 7, 8]
-    // ] ?
+    //board = ['', '', '', '', '', '', '', '', '']
+    //board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    //board = [null, null, null, null, null, null, null, null, null]
+    board = [
+        [0, 1, 2], 
+        [3, 4, 5], 
+        [6, 7, 8]
+    ] 
 
     /* 4.1.2) Initialize whose turn it is to 1 (player 'X'). Player 'O' will be represented by -1.*/
 
@@ -126,6 +128,8 @@ function renderBoard() {
         })
     })
 }
+
+
     /* 4.2.2) Render a message:
       /* 4.2.2.1) If winner has a value other than null (game still in progress), render whose turn it is - use the color name for the player, converting it to upper case.*/
 function renderMessage() {
@@ -177,10 +181,10 @@ function render() {
     5.7.1) Set winner to 'T' if there are no more nulls in the board array.
   5.8) All state has been updated, so render the state to the page (step 4.2).*/
 		
-function handleDrop(event) {
+function handleClick(event) {
     // console.log('target of the click \n', event)
     // needs to relate a click to the column selected
-    const colIdx = markerEls.indexOf(event.target)
+    const colIdx = gameCellEls.indexOf(event.target)
     // console.log('this is colIdx in handleDrop \n', colIdx)
     // determine if the move is valid, and what to do if it is not
     // we need to assign a value to a specific board element
@@ -290,3 +294,6 @@ function renderControls() {
     // })
 }
 
+document.getElementById('cells').addEventListener('click', handleClick)
+// click playAgain button
+playAgainButton.addEventListener('click', init)
