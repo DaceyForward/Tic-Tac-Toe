@@ -31,7 +31,7 @@ h3 {
     margin-top: 1vmin;
 }
 
-#board {
+#cells {
     display: grid;
     grid-template-columns: repeat(3, 20vmin);
     grid-template-rows: repeat(3, 20vmin);
@@ -39,9 +39,9 @@ h3 {
     margin-top: -2vmin;
 }
 
-#board>div {
+#cells>div {
     border: 0.1vmin solid lightgray;
-    border-width: 5vmin;
+    border-width: 0.5vmin;
     border-style: solid;
     transform: scale(0.7);
     transition: transform 150ms ease-in;
@@ -49,7 +49,7 @@ h3 {
     margin: -3vmin;
 }
 
-#board>div:hover {
+#cells>div:hover {
     transform: scale(0.8);
     transition: transform 150ms ease-in;
     background-color: grey;
