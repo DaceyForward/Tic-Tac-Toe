@@ -40,9 +40,6 @@ h3 {
 }
 
 #cells>div {
-    border: 0.1vmin solid lightgray;
-    border-width: 0.5vmin;
-    border-style: solid;
     transform: scale(0.7);
     transition: transform 150ms ease-in;
     background-color: lightgray;
@@ -52,8 +49,7 @@ h3 {
 #cells>div:hover {
     transform: scale(0.8);
     transition: transform 150ms ease-in;
-    background-color: grey;
-    border-color: grey;
+    background-color: lightgray;
 }
 
 button {

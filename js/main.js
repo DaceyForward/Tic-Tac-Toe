@@ -1,9 +1,9 @@
 // 1) Define required constants
     // 1.1) Define a colors object with keys of 'null' (when the square is empty), and players 1 & -1. The value assigned to each key represents the color to display for an empty square (null), player 1 and player -1.
     const COLORS = {
-        0: 'grey', 
-        1: 'blue', 
-        '-1': 'purple'
+        0: 'lightgrey', 
+        1: 'paleturquoise', 
+        '-1': 'plum'
     }
 
     
@@ -51,7 +51,7 @@ function init() {
         // 4.1.3) Initialize winner to null to represent that there is no winner or tie yet. Winner will hold the player value (1 or -1) if there's a winner. Winner will hold a 'T' if there's a tie. 
 
     winner = null
-
+    renderBoard()
 }
 
 //   4.2) Render those values to the page
@@ -105,6 +105,11 @@ function renderMessage() {
   
 // 4.3) Wait for the user to click a square
 
+function render() {
+    renderBoard()
+    renderMessage()
+    renderButton()
+}
 
 // 5) Handle a player clicking a square
 // 5.1) Obtain the index of the square that was clicked by either:
@@ -146,7 +151,7 @@ function handleClick(event) {
     if (total = 3) {
         winner = board[0]
     }
-}
+    
 // 5.7) If there's no winner, check if there's a tie:
 
 
@@ -155,7 +160,8 @@ function handleClick(event) {
 
 // 5.8) All state has been updated, so render the state to the page (step 4.2).
     
-
+render()
+}
 // 6) Handle a player clicking the replay button
 
 function renderControls() {
