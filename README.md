@@ -1,4 +1,5 @@
-# TIC-TAC-TOE ________ Edition!!
+# TIC-TAC-TOE 
+## Disney's Frozen Edition!!
 
 ## Analyze our App's Funtionality
 
@@ -21,7 +22,7 @@ I want to win by getting three cells in a row (horizontally, vertically, or diag
 
 #### Determine the Overall Design of our App
 - Clean, minimalist design and layout
-- Blue Xs and red Os
+- Turquoise blue Xs and light purple Os
 - Grey tic-tac-toe board
     ##### Font: 
     ###### HTML Code

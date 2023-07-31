@@ -5,6 +5,9 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+   /* background: url("https://i.imgur.com/8E0iGjY.png");
+    background-size: cover;
+    background-position: center;*/
 }
 
 h1 {
@@ -43,7 +46,7 @@ h3 {
     transform: scale(0.7);
     transition: transform 150ms ease-in;
     background-color: lightgray;
-    margin: -3vmin
+    margin: -3vmin;
 }
 
 #board>div:hover {
