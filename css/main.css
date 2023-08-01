@@ -5,9 +5,10 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-   /* background: url("https://i.imgur.com/8E0iGjY.png");
+    /* background: url("https://i.imgur.com/8E0iGjY.png");
     background-size: cover;
-    background-position: center;*/
+    background-position: center; */
+    /* I wanted to have a snowy background photo faded as the background */
 }
 
 h1 {
